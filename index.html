@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissor</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script defer src="./app.js"></script>
+  </head>
+  <body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <main class="w-full max-w-md bg-white rounded-xl shadow p-6">
+      <h1 class="text-xl font-bold text-center mb-6">
+        Rock Paper Scissor — 1 Round
+      </h1>
+
+      <section class="grid grid-cols-3 gap-2 mb-6">
+        <button
+          class="choice-btn bg-blue-600 hover:bg-blue-700 text-white py-2 rounded"
+          type="button"
+          data-choice="Rock"
+        >
+          Rock
+        </button>
+        <button
+          class="choice-btn bg-green-600 hover:bg-green-700 text-white py-2 rounded"
+          type="button"
+          data-choice="Paper"
+        >
+          Paper
+        </button>
+        <button
+          class="choice-btn bg-red-600 hover:bg-red-700 text-white py-2 rounded"
+          type="button"
+          data-choice="Scissor"
+        >
+          Scissor
+        </button>
+      </section>
+
+      <section class="space-y-2">
+        <p id="choices" class="text-gray-700">You: – | Computer: –</p>
+        <p id="result" class="font-semibold">Result: –</p>
+      </section>
+
+      <div class="text-center mt-4">
+        <button
+          id="play-again"
+          class="hidden bg-gray-600 hover:bg-gray-700 text-white py-2 px-4 rounded"
+          type="button"
+        >
+          Play Again
+        </button>
+      </div>
+    </main>
+  </body>
+</html>
